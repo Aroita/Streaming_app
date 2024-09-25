@@ -12,7 +12,7 @@ NOTE: This file contains the styling for responsive Template.
 
 :: Header
 :: Navigation
-:: Pages Content 
+:: Pages Content
 :: Back to Top
 :: Sign In
 :: Footer
@@ -33,7 +33,7 @@ NOTE: This file contains the styling for responsive Template.
 :: Blog detail
 :: Trailer
 :: Tv show
-:: Genres page  
+:: Genres page
 :: Geners detail
 :: Tag page
 :: Show Detail
@@ -466,7 +466,7 @@ header .navbar ul li:last-child {
 	width:15.938em;
 	position: relative;
 	overflow: hidden;
-	margin-top: 1.375em;	
+	margin-top: 1.375em;
 }
 .circle {
 	stroke: var(--white);
@@ -1244,7 +1244,7 @@ li.slide-item .block-description .parallax-ratting span {
 }
 
 /*---------------------------------------------------------------------
-                     topten-contens  
+                     topten-contens
 -----------------------------------------------------------------------*/
 .topten-contens {
 	position: relative;
@@ -3715,7 +3715,7 @@ object {
     padding: 0px 3.125em;
 }
 /*---------------------------------------------------------------------
-                           tvshows  
+                           tvshows
 -----------------------------------------------------------------------*/
 .tvshows-slider .swiper-bg:before {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(20, 20, 20, 1) 35%, rgba(83, 100, 141, 0) 100%);
@@ -3767,7 +3767,7 @@ object {
     position: relative;
 }
 /*-------------------------------------------------------------------
-                    genres page                                        
+                    genres page
 ----------------------------------------------*/
 .genres-main {
 	padding-top: 6.25em;
@@ -3797,7 +3797,7 @@ object {
     -o-transform: scale3d(1.1,1.1,1) translate3d(6%,0,0) perspective(500px);
 }
 /*-------------------------------------------------------------------
-                    gerres-detail page                                      
+                    gerres-detail page
 ----------------------------------------------*/
 .genres-list h3.genres-title {
 	letter-spacing: -.02em;
@@ -4011,7 +4011,7 @@ li.slide-item .cast-images:before {
 }
 
 /*-------------------------------------------------------------------
-                    tag page                                      
+                    tag page
 ----------------------------------------------*/
 .iq-tag-box {
 	background: linear-gradient(180deg, var(--iq-black) 0%, rgba(0, 0, 0, 0) 97%), var(--iq-bg1);
@@ -4061,7 +4061,7 @@ li.slide-item .cast-images:before {
     -moz-transform: scale3d(1.1,1.1,1) translate3d(6%,0,0) perspective(500px);
     -o-transform: scale3d(1.1,1.1,1) translate3d(6%,0,0) perspective(500px);
 }
-.iq-tag-box.watchlist-last:hover { 
+.iq-tag-box.watchlist-last:hover {
     transform: scale3d(1.1,1.1,1) translate3d(-6%,0,0) perspective(500px);
     -webkit-transform: scale3d(1.1,1.1,1) translate3d(-6%,0,0) perspective(500px);
     -moz-transform: scale3d(1.1,1.1,1) translate3d(-6%,0,0) perspective(500px);
@@ -4073,14 +4073,14 @@ li.slide-item .cast-images:before {
 	-moz-transform: scale3d(1.1, 1.1, 1) translate3d(6%, 0, 0) perspective(31.25em);
 	-o-transform: scale3d(1.1, 1.1, 1) translate3d(6%, 0, 0) perspective(31.25em);
   }
-  
+
   .watchlist-contens .block-images.watchlist-last:hover {
 	transform: scale3d(1.1, 1.1, 1) translate3d(-6%, 0, 0) perspective(31.25em);
 	-webkit-transform: scale3d(1.1, 1.1, 1) translate3d(-6%, 0, 0) perspective(31.25em);
 	-moz-transform: scale3d(1.1, 1.1, 1) translate3d(-6%, 0, 0) perspective(31.25em);
 	-o-transform: scale3d(1.1, 1.1, 1) translate3d(-6%, 0, 0) perspective(31.25em);
   }
-  
+
 .parallax-buttons.tag-btn {
 	margin-top: 1.875em;
 }
@@ -4117,7 +4117,7 @@ li.slide-item .cast-images:before {
 }
 .movie-content li {
     position: relative;
-    
+
 }
 .show-movie .banner-wrapper {background-image: url(../images/shows-banner/show-4.jpg);height:86vh;}
 .show-movie .banner-caption{top:4.125em;}
@@ -4390,13 +4390,13 @@ height: 100%;
 }
 .verticle-slider .slider-images .slider-image img {
 transition: 3s;
-} 
+}
   .verticle-slider .slider-image {
 	height: 100%;
 	overflow: hidden;
   }
   .verticle-slider .slider-image img {
-	width: 100%; 
+	width: 100%;
 	height: 100%;
 	-o-object-fit: cover;
 	object-fit: cover;
@@ -4483,13 +4483,13 @@ height: 100%;
 }
 .verticle-slider .slider-images .slider--image img {
 transition: 3s;
-} 
+}
   .verticle-slider .slider--image {
 	height: 100%;
 	overflow: hidden;
   }
   .verticle-slider .slider--image img {
-	width: 100%; 
+	width: 100%;
 	height: 100%;
 	-o-object-fit: cover;
 	object-fit: cover;
@@ -4714,7 +4714,7 @@ transition: 3s;
     z-index: 1;
     height: 4.063em;
 }
-/* --------------------starring cards--------------------- */ 
+/* --------------------starring cards--------------------- */
 .starring ul.inner-slider.list-inline{
     position: relative;
     box-sizing: border-box;
@@ -4757,7 +4757,7 @@ header#main-header {
 	right: 0em;
 	text-align: center;
 	z-index: 999;
-	background: rgb(135 72 181 / 50%) !important;
+	background: rgb(0 0 0 / 15%) !important;
 	-webkit-backdrop-filter: blur(0.625em);
 	backdrop-filter: blur(0.625em);
 }
@@ -4845,7 +4845,7 @@ header#main-header {
 }
 .navbar ul li .sub-menu li.active a {
     color:var(--iq-primary);
-} 
+}
 .navbar ul li .sub-menu li>a {
 	font-size: 0.875em;
 	border-radius: 0;

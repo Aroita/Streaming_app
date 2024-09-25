@@ -79,7 +79,7 @@ body {
 	padding: 0;
 	margin: 0;
 	color: var(--iq-body-text);
-	background: var(--iq-body-bg);
+	background: var(--iq-white);
 }
 a,
 .btn {
@@ -118,7 +118,7 @@ h6 {
 	font-weight: 400;
 	margin: 0em;
 	line-height: 1.2;
-	color: var(--iq-white);
+	color: #6825d4;
 }
 h1 a,
 h2 a,
@@ -298,8 +298,8 @@ Border Color
     line-height: 1.5;
 }
 .btn-hover {
-	background: var(--iq-primary-hover);
-	border: 0.063em solid var(--iq-primary-hover);
+	background: #6825d4;
+	border: 0.063em solid #b782f8;
 	color: var(--iq-white);
 	transition: color 0.3s ease;
 	display: inline-block;
