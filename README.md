@@ -36,6 +36,7 @@ mtronic 8: npm install
 -descargar composer
 
 iniciar start xampp para ejecutar
+iniciar puertos back, mentronic, api...
 
 
 

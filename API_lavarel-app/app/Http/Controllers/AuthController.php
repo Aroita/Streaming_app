@@ -68,6 +68,22 @@ class AuthController extends Controller {
         return $this->respondWithToken($token);
     }
 
+    public function login_streaming(Request $request)
+    {
+        // $credentials = request(['email', 'password']);
+        if (! $token = auth('api')->attempt(
+            ["email" => $request->email,
+            "password" => $request->password,
+            "state" => 1,
+           
+            ]
+            )) {
+            return response()->json(['error' => 'Unauthorized'], 401);
+        }
+
+        return $this->respondWithToken($token);
+    }
+
     /**
      * Get the authenticated User.
      *

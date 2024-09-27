@@ -17,16 +17,17 @@ export class AuthService {
   ) {
     //this.initAuth();
   }
-/*
+
+
   initAuth(){
     if(localStorage.getItem("token")){
       this.user = localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user") ?? '') : null;
       this.token = localStorage.getItem("token");
     }
   }
-*/
-  login(email:string,password:string){
-    let URL = URL_SERVICIOS+"/auth/login";
+
+  login_ecommerce(email:string,password:string){
+    let URL = URL_SERVICIOS+"/auth/login_plataforma";
     return this.http.post(URL,{email: email,password: password}).pipe(
       map((auth: any) => {
         const result = this.setAuthFromLocalStorage(auth);
@@ -47,7 +48,7 @@ export class AuthService {
     }
     return false;
   }
-/*
+
   logout(){
     localStorage.removeItem("token");
     localStorage.removeItem("user");
@@ -60,5 +61,5 @@ export class AuthService {
   register(){
 
   }
-*/
+
 }
