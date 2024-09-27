@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { URL_SERVICIOS } from 'src/app/shared/config/config';
+import { URL_SERVICIOS } from 'src/app/config/config';
 
 declare var $:any;
 declare function HOME_INIT([]):any;
