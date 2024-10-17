@@ -13,7 +13,7 @@ declare function INIT_SWIPER([]):any;
 export class HomeComponent {
 
   ngOnInit(): void {
-    console.log(URL_SERVICIOS);
+    //console.log(URL_SERVICIOS);
     setTimeout(() => {
       HOME_INIT($);
       INIT_SWIPER($);

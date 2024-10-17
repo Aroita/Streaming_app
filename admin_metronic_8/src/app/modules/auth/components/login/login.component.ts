@@ -79,7 +79,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       .pipe(first())
       .subscribe((user: any) => {
         if (user) {
-          // this.router.navigate([this.returnUrl]);
+           //this.router.navigate([this.returnUrl]);
           document.location.reload();
         } else {
           this.hasError = true;

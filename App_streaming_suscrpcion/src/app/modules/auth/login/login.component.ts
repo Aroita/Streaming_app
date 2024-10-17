@@ -10,6 +10,7 @@ export class LoginComponent {
 
   email:string = '';
   password:string = '';
+
   constructor(
     public AuthService: AuthService,
   ) {
@@ -18,9 +19,12 @@ export class LoginComponent {
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
+    //console.log(this.AuthService.user);
     if(this.AuthService.user){
       this.AuthService.router.navigateByUrl("/");
+
     }
+
   }
 
   login(){
@@ -30,17 +34,12 @@ export class LoginComponent {
     if(!this.password){
       alert("NECESITAS DIGITAR UNa contraseña");
     }
-    this.AuthService.login_ecommerce(this.email,this.password).subscribe((resp:any) => {
+    this.AuthService.login(this.email, this.password).subscribe((resp: any) => {
       console.log(resp);
-      if(resp){
+      if (resp) {
         this.AuthService.router.navigateByUrl("/");
-      }else{
-        alert("LAS CREDENCIALES SON INCORRECTAS");
       }
-    })
-
+    });
   }
-
-
 
 }
