@@ -15,7 +15,7 @@ export class AuthService {
     public http: HttpClient,
     public router: Router,
   ) {
-    //this.initAuth();
+    this.initAuth();
   }
 
 
@@ -26,16 +26,19 @@ export class AuthService {
     }
   }
 
-  login_ecommerce(email:string,password:string){
-    let URL = URL_SERVICIOS+"/auth/login_plataforma";
+  login(email:string,password:string){
+    let URL = URL_SERVICIOS+"/auth/login";
     return this.http.post(URL,{email: email,password: password}).pipe(
       map((auth: any) => {
         const result = this.setAuthFromLocalStorage(auth);
         return result;
       }),
       catchError((err) => {
-        console.error('err', err);
-        return of(undefined);
+        console.error('Login error', err);
+        return of({
+          status: err.status,
+          message: err.error?.message || 'Login failed'
+        });
       })
     );
   }

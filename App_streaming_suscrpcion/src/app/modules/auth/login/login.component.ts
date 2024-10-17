@@ -30,15 +30,12 @@ export class LoginComponent {
     if(!this.password){
       alert("NECESITAS DIGITAR UNa contraseña");
     }
-    this.AuthService.login_ecommerce(this.email,this.password).subscribe((resp:any) => {
+    this.AuthService.login(this.email, this.password).subscribe((resp: any) => {
       console.log(resp);
-      if(resp){
+      if (resp) {
         this.AuthService.router.navigateByUrl("/");
-      }else{
-        alert("LAS CREDENCIALES SON INCORRECTAS");
       }
-    })
-
+    });
   }
 
 

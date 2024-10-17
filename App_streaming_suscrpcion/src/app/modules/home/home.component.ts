@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { URL_SERVICIOS } from 'src/app/config/config';
+//import { URL_SERVICIOS } from 'src/app/config/config';
 
 declare var $:any;
 declare function HOME_INIT([]):any;
@@ -13,7 +13,7 @@ declare function INIT_SWIPER([]):any;
 export class HomeComponent {
 
   ngOnInit(): void {
-    console.log(URL_SERVICIOS);
+    //console.log(URL_SERVICIOS);
     setTimeout(() => {
       HOME_INIT($);
       INIT_SWIPER($);
